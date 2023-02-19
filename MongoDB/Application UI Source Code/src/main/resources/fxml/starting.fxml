@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.StartingController">
+   <children>
+      <ImageView fitHeight="455.0" fitWidth="683.0" layoutX="-35.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/GreenPass-1.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelDescription" disable="true" layoutX="246.0" layoutY="24.0" opacity="0.0" prefHeight="96.0" prefWidth="282.0" style="-fx-background-color: #80ca83;" text="label" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true" />
+      <TextField fx:id="textfield" disable="true" layoutX="246.0" layoutY="135.0" opacity="0.0" prefHeight="26.0" prefWidth="217.0" />
+      <ScrollPane fx:id="results" disable="true" layoutX="246.0" layoutY="180.0" opacity="0.0" prefHeight="162.0" prefWidth="282.0" style="-fx-background-color: #80ca83;">
+         <content>
+            <Label fx:id="labelResult" disable="true" opacity="0.0" text="Label" textFill="#3bb641" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </content>
+      </ScrollPane>
+      <VBox layoutX="126.0" layoutY="23.0" prefHeight="361.0" prefWidth="114.0" spacing="12.0">
+         <children>
+            <Button fx:id="query1" mnemonicParsing="false" onAction="#query1controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #3bb641;" text="Query1" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="query2" mnemonicParsing="false" onAction="#query2controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #3bb641;" text="Query2" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="query3" mnemonicParsing="false" onAction="#query3controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #3bb641;" text="Query3" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="query4" mnemonicParsing="false" onAction="#query4controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #3bb641 #3bb641;" text="Query4" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="query5" mnemonicParsing="false" onAction="#query5controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #3bb641;" text="Query5" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="query6" mnemonicParsing="false" onAction="#query6controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #3bb641;" text="Query6" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="query7" layoutX="10.0" layoutY="266.0" mnemonicParsing="false" onAction="#query7controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #3bb641;" text="Query7" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="6.0" layoutY="23.0" prefHeight="296.0" prefWidth="114.0" spacing="12.0">
+         <children>
+            <Button fx:id="action1" mnemonicParsing="false" onAction="#action1Controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: white;" text="Action1" textFill="#3bb641">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="action2" mnemonicParsing="false" onAction="#action2Controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: white;" text="Action2" textFill="#3bb641">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="action3" mnemonicParsing="false" onAction="#action3Controller" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: white;" text="Action3" textFill="#3bb641">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <TextField fx:id="creation1" disable="true" layoutX="322.0" layoutY="135.0" opacity="0.0" prefHeight="26.0" prefWidth="198.0" />
+      <Label fx:id="firstName" layoutX="253.0" layoutY="140.0" opacity="0.0" text="First Name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creation2" disable="true" layoutX="322.0" layoutY="170.0" opacity="0.0" prefHeight="26.0" prefWidth="198.0" />
+      <Label fx:id="lastName" layoutX="253.0" layoutY="172.0" opacity="0.0" text="Last Name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creation3" disable="true" layoutX="322.0" layoutY="201.0" opacity="0.0" prefHeight="26.0" prefWidth="198.0" />
+      <Label fx:id="personID" layoutX="253.0" layoutY="204.0" opacity="0.0" text="personID" textFill="#ff8e42">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="results1" disable="true" layoutX="253.0" layoutY="295.0" opacity="0.0" prefHeight="104.0" prefWidth="282.0" style="-fx-background-color: #b1afff;">
+         <content>
+            <Label fx:id="labelResult1" disable="true" opacity="0.0" text="Label" textFill="#3bb641" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </content>
+      </ScrollPane>
+      <Button fx:id="createButton" disable="true" layoutX="253.0" layoutY="268.0" mnemonicParsing="false" opacity="0.0" prefHeight="26.0" prefWidth="265.0" style="-fx-background-color: #3bb641;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER" layoutX="248.0" layoutY="138.0" prefHeight="39.0" prefWidth="309.0" spacing="15.0">
+         <children>
+            <TextField fx:id="action11" disable="true" opacity="0.0" prefHeight="26.0" prefWidth="143.0" promptText="person_id" />
+            <TextField fx:id="action12" disable="true" layoutX="10.0" layoutY="10.0" opacity="0.0" prefHeight="26.0" prefWidth="143.0" promptText="test_id" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="248.0" layoutY="168.0" prefHeight="39.0" prefWidth="309.0" spacing="15.0">
+         <children>
+            <TextField fx:id="action13" disable="true" opacity="0.0" prefHeight="26.0" prefWidth="143.0" promptText="center_id" />
+            <TextField fx:id="action14" disable="true" layoutX="10.0" layoutY="10.0" opacity="0.0" prefHeight="26.0" prefWidth="143.0" promptText="type" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="248.0" layoutY="198.0" prefHeight="39.0" prefWidth="309.0" spacing="15.0">
+         <children>
+            <TextField fx:id="action15" disable="true" opacity="0.0" prefHeight="26.0" prefWidth="143.0" promptText="date" />
+            <TextField fx:id="action16" disable="true" layoutX="10.0" layoutY="10.0" opacity="0.0" prefHeight="26.0" prefWidth="143.0" promptText="doctor_id" />
+         </children>
+      </HBox>
+      <Button fx:id="buttonquery" disable="true" layoutX="476.0" layoutY="135.0" mnemonicParsing="false" opacity="0.0" prefHeight="23.0" prefWidth="52.0" style="-fx-background-color: #3bb641;" text="Start" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Button>
+      <HBox alignment="CENTER" layoutX="248.0" layoutY="228.0" prefHeight="39.0" prefWidth="309.0" spacing="15.0">
+         <children>
+            <TextField fx:id="action17" disable="true" opacity="0.0" prefHeight="26.0" prefWidth="143.0" promptText="nurse_id" />
+            <TextField fx:id="action18" disable="true" layoutX="10.0" layoutY="10.0" opacity="0.0" prefHeight="26.0" prefWidth="143.0" promptText="result" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
